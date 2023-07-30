@@ -4,7 +4,7 @@
 }
 
 body {
-    background: #1b1c1f;
+    background: #1B1C1F;
 }
 
 .navigation {
@@ -14,7 +14,36 @@ body {
     justify-content: center;
 }
 
-@media(max-width: 991px) {
+.hero-title {
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    line-height: 1.35;
+    font-size: 24px;
+}
+
+.btn-purple {
+    background-color: #8d46f6;
+    padding: 16px 40px;
+    transition: background 0.2s ease-in-out;
+}
+
+.btn-purple:hover {
+    border-color: #753dca;
+}
+
+@media (max-width: 1400px) {
+    .hero-title {
+        font-size: 48px;
+    }
+    .hero-desc {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
     .menu-bg {
         background-color: #323335;
     }
