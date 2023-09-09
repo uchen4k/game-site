@@ -1,0 +1,68 @@
+                extends ../layouts/pages-layout
+
+                block title 
+                - var title ="Gta"
+
+                block content
+
+                    header
+                    .Gta-box
+                    .container-xl.p-0
+                        .container
+                        .row
+                            .col-xxl-6.col-xl-6.col-lg-6.col-md-12
+                            // Колонка для блока с текстом
+                            .hero-section.pt-5
+                                h1.hero-title.text-white.m-0 Gta
+                                p.hero-desc.text-white.my-5
+                                | Grand Theft Auto 5 — легендарное продолжение популярной серии Grand Theft Auto. Местом действия стал город Лос-Сантос, полюбившийся ещё в GTA: San Andreas. 
+                                p.hero-desc.text-white
+                                | Впервые игра расскажет историю сразу трех персонажей: Майкла, Тревора и Франклина, между которыми вы сможете переключаться в любое время.
+                .img-mobile
+                        img(src='./img/pic/gta-big.png' alt='')
+
+                            main
+                    .container-xl.p-0
+                        .container
+                        h1.gallery-title Галерея
+                        // Swiper
+                        .swiper.mySwiper
+                            .swiper-wrapper
+                            .swiper-slide
+                                img(src='./img/pic/slider/Gta-slide-1.png' alt='')
+                            .swiper-slide
+                                img(src='./img/pic/slider/Gta-slide-2.png' alt='')
+                            .swiper-button-next
+                            .swiper-button-prev
+
+                            section.articles.py-5
+                .container-xl.p-0
+                    .container
+                    h1.gallery-title Статьи
+                    .row
+                        .col-md-4
+                        .card
+                            .card-body
+                            img.card-img-top.mb-4(src='./img/pic/articles/dota-article-1.png' alt='...')
+                            h5.card-title Реалистичная графика
+                            p.card-text
+                                | NaturalVision Evolved. Это незавершенный визуальный мод, который в настоящее время находится на стадии раннего доступа.
+                            a.btn.btn-primary(href='#') Читать
+                        .col-md-4
+                        .card
+                                .card-body
+                                img.card-img-top.mb-4(src='./img/pic/articles/dota-article-2.png' alt='...')
+                                h5.card-title Сохранение — 100% прохождение
+                                p.card-text 
+                                    | Сохранение сделано на последней версии игры и все пройдено.
+                                a.btn.btn-primary(href='#') Читать
+                                //- Содержимое карточки 2
+                            .col-md-4
+                            .card
+                                .card-body
+                                img.card-img-top.mb-4(src='./img/pic/articles/dota-article-3.png' alt='...')
+                                h5.card-title Новый электропикап Tesla Cybertruck 
+                                p.card-text 
+                                    | Новый электропикап Tesla Cybertruck появится в GTA V 
+                                a.btn.btn-primary(href='#') Читать
+                                //- Содержимое карточки 3

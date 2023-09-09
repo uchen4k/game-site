@@ -1,0 +1,66 @@
+    extends ../layouts/pages-layout
+    block title 
+        -var title ="Фортнайт"
+    block content 
+                    
+                    header
+                    .fortnite-box
+                    .container-xl.p-0
+                        .container
+                        .row
+                            .col-xxl-6.col-xl-6.col-lg-6.col-md-12
+                            // Колонка для блока с текстом
+                            .hero-section.pt-5
+                                h1.hero-title.text-white.m-0 Fortnite
+                                p.hero-desc.text-white.my-5
+                                | Fortnite предлагает своим игрокам массу разнообразных возможностей. Высаживайтесь на остров и поборитесь за звание сильнейшего игрока — или команды. Создайте остров со своими правилами игры. Развлекайтесь с друзьями на островах, которые создали другие игроки… или сразитесь с Бурей, бросив вызов полчищам чудовищ.
+                                p.hero-desc.text-white
+                                | В Fortnite вы можете выбрать из тысяч разных игр: какие-то из них созданы Epic Games, но большинство игр появилось благодаря участникам игрового сообщества.
+                    .img-mobile
+                        img(src='./img/pic/fortnite-big.png' alt='')
+        main
+        section.gallery.pt-5
+            .container-xl.p-0
+            .container
+                h1.gallery-title Галерея
+                // Swiper
+                .swiper.mySwiper
+                .swiper-wrapper
+                    .swiper-slide
+                    img(src='./img/pic/slider/fortnite-slide-1.png', alt='')
+                    .swiper-slide
+                    img(src='./img/pic/slider/fortnite-slide-2.png', alt='')
+                .swiper-button-next
+                .swiper-button-prev
+
+                                section.articles.py-5
+                .container-xl.p-0
+                    .container
+                    h1.gallery-title Статьи
+                    .row
+                        .col-md-4
+                        .card
+                            .card-body
+                            img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-1.png' alt='...')
+                            h5.card-title  Выполняйте  новые задания
+                            p.card-text
+                                | «Играйте по-своему» в Fortnite чтобы получить опыт и другие награды
+                            a.btn.btn-primary(href='#') Читать
+                        .col-md-4
+                        .card
+                                .card-body
+                                img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-2.png' alt='...')
+                                h5.card-title Обновление 21.50 творческого режима 
+                                p.card-text 
+                                    | Обновление добавляет новое устройство «Конструктор холодного оружия»
+                                a.btn.btn-primary(href='#') Читать
+                                //- Содержимое карточки 2
+                            .col-md-4
+                            .card
+                                .card-body
+                                img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-3.png' alt='...')
+                                h5.card-title Набор заданий фантазма для повышения уровня
+                                p.card-text 
+                                    | Набор заданий фантазма для повышения уровня материализовался в fortnite
+                                a.btn.btn-primary(href='#') Читать
+                                //- Содержимое карточки 3
